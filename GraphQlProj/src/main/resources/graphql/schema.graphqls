@@ -1,0 +1,16 @@
+type Student {
+    studentId: Int
+    studentName: String
+    studentAdress: String
+}
+
+type Query {
+    findAllStudent: [Student]
+    getStudentById(id: Int): Student
+}
+
+type Mutation {
+    saveStudent(studentName: String, studentAdress: String): Student
+    updateStudentById(id: Int, studentName: String, studentAdress: String): Student
+    deleteStudentById(id: Int): Student
+}
