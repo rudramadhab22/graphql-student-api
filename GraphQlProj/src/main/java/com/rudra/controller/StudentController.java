@@ -22,8 +22,8 @@ public class StudentController {
 	}
 	
     @QueryMapping
-    public Student getStudentById(@Argument Integer id) {
-        return service.getStudentById(id);
+    public Student getStudentById(@Argument Integer sid) {
+        return service.getStudentById(sid);
     }
 
     
