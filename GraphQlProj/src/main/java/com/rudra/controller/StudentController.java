@@ -33,6 +33,7 @@ public class StudentController {
         student.setStudentName(studentName);
         student.setStudentAdress(studentAdress);
         return service.saveStudent(student);
+        // added comment
     }
 
     
@@ -56,6 +57,8 @@ public class StudentController {
     @MutationMapping
     public Student deleteStudentById(@Argument Integer id) {
         return service.deleteStudentById(id);
+        
+        //hello Rudra
     }
 
 }
